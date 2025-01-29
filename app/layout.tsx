@@ -1,17 +1,7 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import type { Metadata } from "next";
 import { Header } from "@/components/header";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { playwrite } from "@/fonts";
 
 export const metadata: Metadata = {
   title: "Steph and Dan's Wedding",
@@ -26,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${playwrite.className} antialiased bg-stone-900 text-stone-50`}
       >
         <Header />
         {children}
