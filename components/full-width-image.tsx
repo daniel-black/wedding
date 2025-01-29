@@ -5,7 +5,7 @@ export function FullWidthImage({ src, alt }: { src: string; alt: string }) {
     <div className="relative w-full h-auto aspect-video">
       <div className="absolute inset-0 flex flex-col justify-center p-6 md:p-12 z-10">
         <h1 className="text-5xl text-white font-semibold text-center drop-shadow-lg">
-          We're getting married!
+          We&apos;re getting married!
         </h1>
       </div>
       <Image
