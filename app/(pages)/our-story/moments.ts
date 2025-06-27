@@ -40,7 +40,7 @@ export const moments: Array<Moment> = [
       {
         src: "/our-story/estes-park-1.JPG",
         alt: "Dan and Steph in Estes Park",
-        text: "Catch me if I fall?",
+        text: "Catch me",
       },
       {
         src: "/our-story/estes-park-2.jpeg",
