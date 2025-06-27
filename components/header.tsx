@@ -16,7 +16,7 @@ import {
   Telescope,
 } from "lucide-react";
 
-const NAV_LINKS = [
+export const NAV_LINKS = [
   { label: "HOME", href: "/", icon: Home },
   { label: "FAQ", href: "/faq", icon: CircleQuestionMark },
   { label: "RSVP", href: "/rsvp", icon: CheckCircle },
@@ -33,7 +33,7 @@ const NAV_LINKS = [
 export default function Header() {
   return (
     <header className="w-full fixed top-0 left-0 z-50 pointer-events-none">
-      <nav className="mx-auto max-w-5xl px-2 lg:px-0 py-2 flex justify-between items-center pointer-events-none">
+      <nav className="mx-auto max-w-4xl px-2 lg:px-0 py-2 flex justify-between items-center pointer-events-none">
         <Button asChild className="rounded-full pointer-events-auto shadow-lg">
           <Link
             href="/"

@@ -11,7 +11,7 @@ export default function DisplayText() {
         <br />
         <span>May 29, 2026</span>
       </p>
-      <CountDown targetDate="2026-05-29T17:00:00-06:00" />
+      <CountDown variant="default" targetDate="2026-05-29T17:00:00-06:00" />
     </div>
   );
 }

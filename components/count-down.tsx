@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Badge } from "./ui/badge";
+import { Badge, BadgeVariant } from "./ui/badge";
 
 interface TimeLeft {
   days: number;
@@ -10,7 +10,13 @@ interface TimeLeft {
   seconds: number;
 }
 
-export function CountDown({ targetDate }: { targetDate: string }) {
+export function CountDown({
+  targetDate,
+  variant,
+}: {
+  targetDate: string;
+  variant: BadgeVariant;
+}) {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
     days: 0,
     hours: 0,
@@ -59,7 +65,7 @@ export function CountDown({ targetDate }: { targetDate: string }) {
 
   return (
     <Badge
-      variant="secondary"
+      variant={variant}
       className="select-none px-3 py-1 rounded-full flex items-baseline gap-2 tabular-nums"
     >
       <div>
