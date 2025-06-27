@@ -9,13 +9,6 @@
   --font-body: var(--font-lato);
   --font-mono: var(--font-space-mono);
 
-  /* Colors I've added */
-  --color-mustard: var(--mustard);
-  --color-beige: var(--beige);
-  --color-green-vibrant: var(--green-vibrant);
-  --color-green-subdued: var(--green-subdued);
-  --color-green-brown: var(--green-brown);
-
   /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -45,13 +38,6 @@
 
 /* Defines actual color values and base measurements */
 :root {
-  /* colors im testing */
-  --mustard: #d1b11d;
-  --beige: #d4cf8e;
-  --green-vibrant: #4e7e2c;
-  --green-subdued: #516d54;
-  --green-brown: #586522;
-
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.147 0.004 49.25);
