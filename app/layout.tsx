@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Footer } from "@/components/footer";
 import Header from "@/components/header";
-import { displayFont, bodyFont, monoFont } from "@/lib/fonts";
+import { displayFont, bodyFont, monoFont, handwrittenFont } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Wedding",
@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${displayFont.variable} ${bodyFont.variable} ${monoFont.variable} antialiased`}
+        className={`${displayFont.variable} ${bodyFont.variable} ${monoFont.variable} ${handwrittenFont.variable} antialiased`}
       >
         <Header />
         {children}

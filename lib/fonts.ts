@@ -1,4 +1,11 @@
-import { Yeseva_One, Lato, Space_Mono } from "next/font/google";
+import {
+  Yeseva_One,
+  Lato,
+  Space_Mono,
+  Caveat,
+  Oooh_Baby,
+  Gloria_Hallelujah,
+} from "next/font/google";
 
 export const displayFont = Yeseva_One({
   subsets: ["latin"],
@@ -16,4 +23,10 @@ export const monoFont = Space_Mono({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-space-mono",
+});
+
+export const handwrittenFont = Gloria_Hallelujah({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-handwritten",
 });

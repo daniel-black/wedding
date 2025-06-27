@@ -8,6 +8,7 @@
   --font-display: var(--font-yeseva-one);
   --font-body: var(--font-lato);
   --font-mono: var(--font-space-mono);
+  --font-handwritten: var(--font-handwritten);
 
   /* Colors */
   --color-background: var(--background);
