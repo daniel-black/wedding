@@ -1,34 +1,24 @@
+/* For tailwind utility classes and animations */
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Extends tailwind's default theme with custom design tokens */
 @theme inline {
+  /* Fonts */
+  --font-display: var(--font-yeseva-one);
+  --font-body: var(--font-lato);
+  --font-mono: var(--font-space-mono);
+
+  /* Colors I've added */
   --color-mustard: var(--mustard);
   --color-beige: var(--beige);
   --color-green-vibrant: var(--green-vibrant);
   --color-green-subdued: var(--green-subdued);
   --color-green-brown: var(--green-brown);
 
+  /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-
-  /* Fonts */
-  --font-display: var(--font-yeseva-one);
-  --font-body: var(--font-lato);
-  --font-mono: var(--font-space-mono);
-
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
   --color-ring: var(--ring);
   --color-input: var(--input);
   --color-border: var(--border);
@@ -45,12 +35,15 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+
+  /* Radius */
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+/* Defines actual color values and base measurements */
 :root {
   /* colors im testing */
   --mustard: #d1b11d;
@@ -78,21 +71,9 @@
   --border: oklch(0.923 0.003 48.717);
   --input: oklch(0.923 0.003 48.717);
   --ring: oklch(0.709 0.01 56.259);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0.001 106.423);
-  --sidebar-foreground: oklch(0.147 0.004 49.25);
-  --sidebar-primary: oklch(0.216 0.006 56.043);
-  --sidebar-primary-foreground: oklch(0.985 0.001 106.423);
-  --sidebar-accent: oklch(0.97 0.001 106.424);
-  --sidebar-accent-foreground: oklch(0.216 0.006 56.043);
-  --sidebar-border: oklch(0.923 0.003 48.717);
-  --sidebar-ring: oklch(0.709 0.01 56.259);
 }
 
+/* Applies foundational styles */
 @layer base {
   * {
     @apply border-border outline-ring/50;
