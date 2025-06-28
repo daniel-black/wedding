@@ -1,5 +1,5 @@
 import { Moment as MomentType } from "@/app/(pages)/our-story/moments";
-import { Polaroid } from "./polaroid";
+import { Polaroid } from "@/components/polaroid";
 
 export type MomentProps = MomentType;
 
@@ -7,9 +7,9 @@ export function Moment({ date, title, text, images }: MomentProps) {
   return (
     <section className="flex flex-col gap-4">
       <div>
-        <h2 className="text-2xl font-bold">{title}</h2>
-        <p className="text-sm text-muted-foreground">{date}</p>
-        <p className="text-base">{text}</p>
+        <h2 className="text-lg sm:text-2xl font-bold mt-0">{title}</h2>
+        {/* <p className="text-sm text-muted-foreground">{date}</p> */}
+        <p className="text-base text-muted-foreground">{text}</p>
       </div>
       {images && (
         <div className="flex flex-wrap gap-4 justify-start">

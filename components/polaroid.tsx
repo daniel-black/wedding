@@ -19,7 +19,7 @@ export function Polaroid({ src, alt, date, text }: PolaroidProps) {
           sizes="(max-width: 640px) 192px, 256px"
         />
       </div>
-      <div className="h-[58px] w-full bg-white/50 border-t border-gray-100/50 border-dashed rounded-b-[4px] font-handwritten text-sm font-bold tracking-widest py-1.5 px-6 text-[#575261]">
+      <div className="h-[58px] w-full bg-white/50 border-t border-gray-100/50 border-dashed rounded-b-[4px] font-handwritten text-sm font-bold tracking-widest py-1.5 px-3 text-center text-[#575261]">
         <p>{date}</p>
         <p>{text}</p>
       </div>
