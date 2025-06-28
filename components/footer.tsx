@@ -7,7 +7,7 @@ import { CountDown } from "./count-down";
 export function Footer() {
   return (
     <footer className="w-full bg-primary text-primary-foreground border-t border-primary-foreground/10">
-      <div className="max-w-4xl mx-auto px-4 py-10 md:py-14">
+      <div className="max-w-3xl mx-auto px-4 py-10 md:py-14">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-10 md:gap-16">
           {/* Left: Info & Nav */}
           <div className="flex-1 min-w-0 space-y-6">
