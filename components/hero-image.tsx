@@ -6,7 +6,7 @@ export default function HeroImage() {
       src="/impressionist-greenhouse.png"
       alt="Impressionist Greenhouse"
       fill
-      className="object-cover mask-t-from-80% brightness-70"
+      className="object-cover brightness-70 grayscale-50"
       priority
     />
   );

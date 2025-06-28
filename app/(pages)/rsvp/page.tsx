@@ -1,5 +1,3 @@
-import { Polaroid } from "@/components/polaroid";
-
 export default function RSVPPage() {
   return (
     <div className="min-h-screen bg-background">
@@ -9,10 +7,7 @@ export default function RSVPPage() {
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl text-left">
             Please let us know if you'll be joining us for our special day.
           </p>
-          <div className="space-y-6">
-            <div className="bg-red-400 w-full h-[20px]"></div>
-            <Polaroid />
-          </div>
+          <div className="space-y-6"></div>
         </div>
       </div>
     </div>
