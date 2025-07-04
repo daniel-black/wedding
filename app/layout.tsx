@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Footer } from "@/components/footer";
-import Header from "@/components/header";
+import { Footer } from "@/components/layout/footer";
+import Header from "@/components/layout/header";
 import { displayFont, bodyFont, monoFont, handwrittenFont } from "@/lib/fonts";
 
 export const metadata: Metadata = {

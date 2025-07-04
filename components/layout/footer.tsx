@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { SpotifyEmbed, RECOMMENDATIONS_PLAYLIST_URL } from "./spotify-embed";
-import { NAV_LINKS } from "./header";
+import { SpotifyEmbed, RECOMMENDATIONS_PLAYLIST_URL } from "../spotify-embed";
+
 import { ExternalLink, ListMusic } from "lucide-react";
-import { CountDown } from "./count-down";
+import { CountDown } from "../count-down";
+import { NAV_LINKS } from "./nav-links";
 
 export function Footer() {
   return (
