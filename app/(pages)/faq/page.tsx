@@ -4,12 +4,42 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { GoogleMapsEmbed } from "@next/third-parties/google";
+import Link from "next/link";
 
-const faqs = [
+const faqs: Array<{ question: string; answer: React.ReactNode }> = [
+  {
+    question: "What should I expect for weather?",
+    answer: (
+      <p>
+        End of May in Denver is typically warm and sunny, but it can be
+        unpredictable. We recommend coming prepared for a variety of weather.
+        The greenhouse is a covered space and the surrounding garden has a
+        decent bit of tree cover. Please check the{" "}
+        <a
+          href="https://www.accuweather.com/en/us/denver/80203/may-weather/347810?year=2026"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline underline-offset-2 text-primary hover:text-blue-600 transition-colors duration-75"
+        >
+          forecast
+        </a>{" "}
+        closer to the date.
+      </p>
+    ),
+  },
   {
     question: "What is the dress code for the wedding?",
-    answer:
-      "The dress code is cocktail attire. We recommend semi-formal to formal wear. For women, cocktail dresses or elegant separates are perfect. For men, a suit and tie or sport coat with dress pants would be appropriate.",
+    answer: (
+      <div>
+        <p>
+          Cocktail attire. Wear something colorful and bright for the garden.
+        </p>
+        <p>Check out these fits:</p>
+        <span>image 1</span>
+        <span>image 2</span>
+      </div>
+    ),
   },
   {
     question: "Can I bring a plus one?",
@@ -17,24 +47,85 @@ const faqs = [
       "Plus ones are only included if specifically noted on your invitation. If you have questions about your invitation, please reach out to us directly.",
   },
   {
-    question: "Are children welcome at the wedding?",
-    answer:
-      "We love your little ones, but we have chosen to make our wedding an adults-only celebration. This allows all guests to relax and enjoy the evening. We appreciate your understanding!",
-  },
-  {
     question: "What time should I arrive?",
     answer:
       "Please arrive 30 minutes before the ceremony start time. This will give you time to find parking, get settled, and find your seat.",
   },
   {
-    question: "Is there parking available at the venue?",
-    answer:
-      "Yes, there is complimentary parking available at the venue. Valet parking will also be provided for your convenience.",
+    question: "Is there parking available at the Denver Botanic Gardens?",
+    answer: (
+      <div className="space-y-4">
+        <p>
+          Yes, there is free parking available at the gardens.{" "}
+          <a
+            href="https://www.botanicgardens.org/york-street/parking-transportation-accessibility-york-street"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 text-primary hover:text-blue-600 transition-colors duration-75"
+          >
+            Details{" "}
+          </a>
+        </p>
+        <GoogleMapsEmbed
+          apiKey={process.env.GOOGLE_MAPS_EMBED_API_KEY ?? ""}
+          height={300}
+          width="100%"
+          mode="place"
+          q="39.73163244562152,-104.95951183147558"
+          zoom="16"
+          maptype="roadmap"
+          style="border-radius: 10px;"
+        />
+      </div>
+    ),
+  },
+  {
+    question:
+      "How far away from the Denver Botanic Gardens is the reception and dinner venue?",
+    answer: (
+      <div className="space-y-2">
+        <p>
+          The Wright Room is a 10 to 15 minute drive from the gardens depending
+          on traffic.
+        </p>
+        <p>
+          We recommend hopping in an Uber or a Lyft but if you&apos;re feeling
+          particularly adventurous you could grab a scooter and take a 22 minute
+          joyride thorugh the city.
+        </p>
+        <p>
+          If you&apos;re driving, you can park in the{" "}
+          <a
+            href="https://denverpavilions.com/parking/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 text-primary hover:text-blue-600 transition-colors duration-75"
+          >
+            Denver Pavilions Parking Garage
+          </a>{" "}
+          by the 16th Street Mall to get to the Wright Room.
+        </p>
+        <GoogleMapsEmbed
+          apiKey={process.env.GOOGLE_MAPS_EMBED_API_KEY ?? ""}
+          height={300}
+          width="100%"
+          mode="place"
+          q="Denver+Pavilions+Parking+Garage"
+          zoom="16"
+          maptype="roadmap"
+          style="border-radius: 10px;"
+        />
+      </div>
+    ),
   },
   {
     question: "What happens if it rains?",
-    answer:
-      "Our ceremony and reception are both indoors, so the celebration will proceed as planned regardless of the weather. We'll have umbrellas available for guests moving between buildings.",
+    answer: (
+      <p>
+        We will all huddle in the greenhouse together. The dinner and reception
+        venue is indoors so we will be alright.
+      </p>
+    ),
   },
   {
     question: "Can I take photos during the ceremony?",
@@ -42,29 +133,51 @@ const faqs = [
       "We kindly ask that you refrain from taking photos during the ceremony. Our professional photographer will capture all the special moments, and we'll be happy to share the photos with you afterward.",
   },
   {
-    question: "What type of food will be served?",
-    answer:
-      "We'll be serving a plated dinner with options for different dietary restrictions. Please let us know about any dietary requirements when you RSVP.",
-  },
-  {
-    question: "Is there a wedding registry?",
-    answer:
-      "Your presence at our wedding is the greatest gift of all. However, if you'd like to give a gift, we have a small registry available. Information can be found on our wedding website.",
-  },
-  {
     question: "What's the timeline for the day?",
     answer:
-      "The ceremony begins at 4:00 PM, followed by cocktail hour from 5:00-6:00 PM, and dinner and dancing from 6:00 PM until 11:00 PM.",
+      "We recommend trickling into the garden at 4:30 PM. The ceremony will start at 5 PM and then will be followed by a cocktail hour in the garden. Then we will take the party to the Wright Room around 7:30 PM where we will have the dinner and reception until around 11 PM.",
   },
   {
     question: "Are there accommodations nearby?",
-    answer:
-      "Yes! We've reserved a block of rooms at several nearby hotels. Please check our travel page for more details and booking information.",
+    answer: (
+      <p>
+        Yes! There's a lot of{" "}
+        <a
+          href="https://www.google.com/maps/search/Hotels/@39.7483811,-105.004088,5547m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline underline-offset-2 text-primary hover:text-blue-600 transition-colors duration-75"
+        >
+          hotels
+        </a>{" "}
+        and{" "}
+        <a
+          href="https://www.airbnb.com/s/Denver--CO/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJzxcfI6qAa4cR1jaKJ_j0jhE&checkin=2026-05-28&checkout=2026-05-31&adults=1&query=Denver%2C%20CO&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2025-07-01&monthly_length=3&monthly_end_date=2025-10-01&search_mode=regular_search&price_filter_input_type=2&price_filter_num_nights=3&channel=EXPLORE&ne_lat=39.77993408712175&ne_lng=-104.96375244951616&sw_lat=39.714300563478986&sw_lng=-105.0225874882725&zoom=13.354978269350728&zoom_level=13.354978269350728&search_by_map=true&search_type=user_map_move"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline underline-offset-2 text-primary hover:text-blue-600 transition-colors duration-75"
+        >
+          Airbnbs
+        </a>{" "}
+        in the area.
+      </p>
+    ),
   },
   {
     question: "What should I do if I can't attend?",
-    answer:
-      "We understand that circumstances change. Please RSVP 'no' as soon as possible so we can adjust our plans accordingly. We'll miss you but appreciate your timely response.",
+    answer: (
+      <p>
+        We understand that circumstances change. Please{" "}
+        <Link
+          href="/rsvp"
+          className="underline underline-offset-2 text-primary hover:text-blue-600 transition-colors duration-75"
+        >
+          RSVP
+        </Link>{" "}
+        <b>no</b> as soon as possible so we can adjust our plans accordingly.
+        We'll miss you but appreciate your timely response.
+      </p>
+    ),
   },
 ];
 

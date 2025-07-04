@@ -8,6 +8,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Mountain, Plane } from "lucide-react";
 
 export default function TravelPage() {
   return (
@@ -23,6 +25,52 @@ export default function TravelPage() {
           </p>
 
           <div className="space-y-12">
+            <section>
+              <Tabs defaultValue="out-of-towners" className="w-[400px]">
+                <TabsList>
+                  <TabsTrigger value="out-of-towners">
+                    <span>Out of towners</span>
+                    <Plane />
+                  </TabsTrigger>
+                  <TabsTrigger value="denver-folks">
+                    <span>Denver folks</span>
+                    <Mountain />
+                  </TabsTrigger>
+                </TabsList>
+                <TabsContent value="out-of-towners">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Flying in to Denver</CardTitle>
+                      <CardDescription>
+                        Denver airport can be a zoo.
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p></p>
+                    </CardContent>
+                  </Card>
+                </TabsContent>
+                <TabsContent value="denver-folks">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Locals</CardTitle>
+                      <CardDescription>
+                        Not much to tell you guys.
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p>
+                        We recommend you take an Uber or Lyft to and from the
+                        venues so that you can enjoy the evening without having
+                        to worry about driving home sober at the end of the of
+                        the night.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </TabsContent>
+              </Tabs>
+            </section>
+
             {/* Getting to Denver */}
             <section id="getting-to-denver" className="scroll-mt-16">
               <h2 className="text-2xl font-semibold mb-6 text-left">

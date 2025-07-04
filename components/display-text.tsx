@@ -1,4 +1,6 @@
 import { CountDown } from "./count-down";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function DisplayText() {
   return (
@@ -12,6 +14,15 @@ export default function DisplayText() {
         <span>May 29, 2026</span>
       </p>
       <CountDown variant="default" targetDate="2026-05-29T17:00:00-06:00" />
+      <div className="mt-8 pointer-events-auto">
+        <Button
+          size="lg"
+          className="bg-primary/90 hover:bg-primary text-primary-foreground shadow-lg"
+          asChild
+        >
+          <Link href="/rsvp">RSVP Now</Link>
+        </Button>
+      </div>
     </div>
   );
 }

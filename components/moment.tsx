@@ -12,7 +12,7 @@ export function Moment({ date, title, text, images }: MomentProps) {
         <p className="text-base text-muted-foreground">{text}</p>
       </div>
       {images && (
-        <div className="flex flex-wrap gap-4 justify-start">
+        <div className="flex flex-wrap gap-6 justify-start">
           {images.map((image, index) => (
             <Polaroid
               date={date}

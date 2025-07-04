@@ -9,7 +9,7 @@ type PolaroidProps = {
 
 export function Polaroid({ src, alt, date, text }: PolaroidProps) {
   return (
-    <div className="border border-gray-100/50 rounded-[4px] bg-white w-fit h-fit shadow-xl bg-[url('https://www.transparenttextures.com/patterns/groovepaper.png')] bg-cover bg-center">
+    <div className="border border-gray-100/50 rounded-[4px] bg-white w-fit h-fit shadow-xl bg-[url('https://www.transparenttextures.com/patterns/groovepaper.png')] bg-cover bg-center hover:scale-103 hover:shadow-2xl transition-all duration-300">
       <div className="rounded-[2px] mx-[18px] mt-[36px] mb-[24px] h-[314px] w-[236px] bg-gray-300 relative overflow-hidden filter sepia-10">
         <Image
           src={src}

@@ -12,8 +12,8 @@ import {
   Home,
   Heart,
   MapPin,
-  PlusIcon,
   Telescope,
+  MenuIcon,
 } from "lucide-react";
 
 export const NAV_LINKS = [
@@ -54,7 +54,7 @@ export default function Header() {
               size="icon"
               className="rounded-full shadow-lg pointer-events-auto"
             >
-              <PlusIcon className="w-4 h-4" />
+              <MenuIcon className="w-4 h-4" />
             </Button>
           </PopoverTrigger>
           <PopoverContent align="end" className="max-w-fit p-2">
