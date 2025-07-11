@@ -141,7 +141,7 @@ const faqs: Array<{ question: string; answer: React.ReactNode }> = [
     question: "Are there accommodations nearby?",
     answer: (
       <p>
-        Yes! There's a lot of{" "}
+        Yes! There&apos;s a lot of{" "}
         <a
           href="https://www.google.com/maps/search/Hotels/@39.7483811,-105.004088,5547m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D"
           target="_blank"
