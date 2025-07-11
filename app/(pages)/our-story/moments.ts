@@ -201,38 +201,94 @@ export const moments: Array<Moment> = [
     date: "10/31/24",
     title: "Halloween",
     text: "Our apartment had a door decoration contest and we won first place. Nala was also very festive.",
+    images: [
+      {
+        src: "/our-story/halloween-door.jpeg",
+        alt: "Halloween door",
+        text: "Our contest winning door",
+      },
+      {
+        src: "/our-story/pumpkin-nala.jpeg",
+        alt: "Nala in a pumpkin costume",
+        text: "The cutest pumpkin",
+      },
+    ],
   },
   {
     date: "11/01/24",
     title: "Mountain Getaway for Steph's Birthday",
-    text: "Dan took Steph to a tiny little Airnbn in the mountains for her birthday. We went on nice walks and binged the TV show Grimm on a projector.",
+    text: "We went to this tiny Airbnb in the mountains for Steph's birthday. There was just a little bit of snow on the ground and we saw mule deer on our walks. The cabin had a projector so we snuggled up with our popcorn and burned through the show we were watching at the time.",
+    images: [
+      {
+        src: "/our-story/steph-birthday.jpeg",
+        alt: "The Airbnb we went to for Steph's birthday",
+        text: "Cozy cabin",
+      },
+    ],
   },
   {
     date: "12/17/24",
     title: "The Ring is Ready",
-    text: "Dan finally got to see the completed ring. He shipped it to Alexis in Miami with the most premium USPS tracking options possible.",
+    text: "Just days before we were set to leave on our holiday travels, Dan finally got to see the completed ring. He shipped it to Alexis in Miami with the most premium USPS tracking options possible.",
+    images: [
+      {
+        src: "/our-story/ring-is-ready.jpeg",
+        alt: "The engagement ring",
+        text: "surprise : )",
+      },
+    ],
   },
   {
     date: "12/22/24",
     title: "Seattle",
-    text: "The first stop on our holiday travels. We went to Seattle and saw it all.",
+    text: "We had been wanting to do a trip over the holidays just the two of us and we finally made it happen. We spent a couple days over Christmas in Seattle exploring the city. Our hotel was a block away from the Pike Place Market and nearly every morning we got breakfast at this place with the most amazing breakfast biscuits. We saw the Space Needle, the Leavenworth Christmas Market, and the Chihuly Gardens.",
+    images: [
+      {
+        src: "/our-story/stunner.jpeg",
+        alt: "Steph looking gooood",
+        text: "Breakfast with a view",
+      },
+      {
+        src: "/our-story/seattle-waterfront.jpeg",
+        alt: "Us in Seattle",
+        text: "Waterfront walk",
+      },
+    ],
   },
   {
     date: "12/27/24",
     title: "Miami",
-    text: "We stayed with her Aunt, I met her dad and then it was proposal time.",
+    text: "After Seattle, we flew to Miami to visit with Steph's family and friends down there.",
   },
   {
     date: "12/30/24",
     title: "Proposal",
-    text: "Dan proposed to Steph in a little park in Miami by the beach. The photographer was waiting in stealth and Steph was totally surprised.",
+    text: "Dan proposed to Steph in a little park in Miami by the beach. We went to this park with Steph's mom and Alexis under the pretense of going to a nice dinner at a restaurant nearby. On the drive over, Steph was holding Dan's hand and noticed on his watch that his heart rate was going way up - she was a little suspicious at this moment but hadn't put it together yet. The restaurant was closed when we got there (oh no how weird) so we went for a little walk around the park while Esther and Alexis pretended to find an alternative restaurant. We had arranged for a photographer to be stealthily waiting for us to come by to capture the moment and when Dan spotted her Alexis suggested we take a picture by the water. While Steph was getting herself in position for the picture, Dan got down on one knee, ring in hand, and asked Steph to marry him. She said yes : )",
+    images: [
+      {
+        src: "/our-story/proposal.JPG",
+        alt: "The proposal",
+        text: "The proposal",
+      },
+      {
+        src: "/our-story/ring.JPG",
+        alt: "The ring",
+        text: "The ring",
+      },
+    ],
   },
   {
     date: "01/11/25",
     title: "We Find Our Venue",
-    text: "Dan and Steph visited the Denver Botanic Gardens fell in love with the Woodland Mosaic.",
+    text: "Dan and Steph visited the Denver Botanic Gardens fell in love with the Woodland Mosaic. It perfectly fit our vision for a small, intimate wedding in the most beautiful setting.",
+    images: [
+      {
+        src: "/our-story/greenhouse.jpeg",
+        alt: "The greenhouse",
+        text: "The greenhouse",
+      },
+    ],
   },
-  // Last entry
   {
     date: "05/29/26",
     title: "Wedding",
