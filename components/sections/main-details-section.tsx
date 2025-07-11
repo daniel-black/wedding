@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, MapPin, Users, Heart, Gift } from "lucide-react";
+import { Calendar, Clock, MapPin, Users, Heart } from "lucide-react";
 import Link from "next/link";
 
 export function MainDetailsSection() {
@@ -10,8 +10,8 @@ export function MainDetailsSection() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Wedding Details</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Join us for a beautiful celebration of love in the heart of Denver's
-            most stunning gardens
+            Join us for a beautiful celebration of love in the heart of
+            Denver&apos;s most stunning gardens
           </p>
         </div>
 

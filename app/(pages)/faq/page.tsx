@@ -91,7 +91,7 @@ const faqs: Array<{ question: string; answer: React.ReactNode }> = [
         <p>
           We recommend hopping in an Uber or a Lyft but if you&apos;re feeling
           particularly adventurous you could grab a scooter and take a 22 minute
-          joyride thorugh the city.
+          joyride through the city.
         </p>
         <p>
           If you&apos;re driving, you can park in the{" "}
@@ -130,7 +130,7 @@ const faqs: Array<{ question: string; answer: React.ReactNode }> = [
   {
     question: "Can I take photos during the ceremony?",
     answer:
-      "We kindly ask that you refrain from taking photos during the ceremony. Our professional photographer will capture all the special moments, and we'll be happy to share the photos with you afterward.",
+      "We kindly ask that you refrain from taking photos during the ceremony. Our professional photographer will capture all the special moments, and we&apos;ll be happy to share the photos with you afterward.",
   },
   {
     question: "What's the timeline for the day?",
@@ -175,7 +175,7 @@ const faqs: Array<{ question: string; answer: React.ReactNode }> = [
           RSVP
         </Link>{" "}
         <b>no</b> as soon as possible so we can adjust our plans accordingly.
-        We'll miss you but appreciate your timely response.
+        We&apos;ll miss you but appreciate your timely response.
       </p>
     ),
   },

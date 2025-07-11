@@ -5,7 +5,7 @@ export default function SchedulePage() {
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl font-bold mb-4 text-left">Schedule</h1>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl text-left">
-            Here's what to expect on our wedding day timeline.
+            Here&apos;s what to expect on our wedding day timeline.
           </p>
 
           {/* Pre-Wedding Recommendations */}
@@ -58,7 +58,8 @@ export default function SchedulePage() {
                       </span>
                     </p>
                     <p className="text-sm text-muted-foreground">
-                      We'll mingle and get settled before the ceremony begins
+                      We&apos;ll mingle and get settled before the ceremony
+                      begins
                     </p>
                   </div>
                 </div>
@@ -116,7 +117,8 @@ export default function SchedulePage() {
                       Travel to The Wright Room
                     </h3>
                     <p className="text-muted-foreground mb-3">
-                      We'll move to our reception venue for dinner and dancing
+                      We&apos;ll move to our reception venue for dinner and
+                      dancing
                     </p>
                     <div className="bg-muted/50 rounded-lg p-4">
                       <h4 className="font-medium mb-2">
