@@ -27,6 +27,7 @@ interface Guest {
   full_name: string;
   group_id: string;
   rsvp: "yes" | "no" | null;
+  reception_only: boolean;
 }
 
 type PartyAttendance = Array<Pick<Guest, "id" | "rsvp">>;
@@ -51,7 +52,7 @@ export default function RSVPForm() {
     const supabase = createClient();
     const { data, error } = await supabase
       .from("rsvp_guest")
-      .select("id,full_name,group_id,first_name,rsvp")
+      .select("id,full_name,group_id,first_name,rsvp,reception_only")
       .ilike("full_name", `%${nameInput}%`)
       .limit(1);
     if (error) {
@@ -75,7 +76,7 @@ export default function RSVPForm() {
     const supabase = createClient();
     const { data, error } = await supabase
       .from("rsvp_guest")
-      .select("id,first_name,full_name,group_id,rsvp")
+      .select("id,first_name,full_name,group_id,rsvp,reception_only")
       .eq("group_id", foundGuest.group_id)
       .order("full_name", { ascending: true });
     if (error) {
@@ -136,8 +137,8 @@ export default function RSVPForm() {
       <CardHeader>
         <CardTitle className="font-display text-2xl">RSVP</CardTitle>
         <CardDescription>
-          We&apos;re so excited to have you join us for our wedding! Please fill
-          out the form below to let us know if you can make it.
+          We&apos;re so excited to have you join us for our special day! Please
+          fill out the form below to let us know if you can make it.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -271,6 +272,12 @@ export default function RSVPForm() {
                         />
                         <Label htmlFor={`guest-${guest.id}`}>
                           {guest.full_name}
+                          {guest.reception_only && (
+                            <span className="text-muted-foreground">
+                              {" "}
+                              (Reception Only)
+                            </span>
+                          )}
                         </Label>
                       </div>
                     ))}
