@@ -1,6 +1,4 @@
 import { EngagementBackground } from "../engagement-background";
-import { Card, CardContent } from "../ui/card";
-import { Badge } from "../ui/badge";
 
 export function MainDetailsSection() {
   return (
