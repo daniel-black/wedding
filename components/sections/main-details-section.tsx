@@ -78,8 +78,8 @@ export function MainDetailsSection() {
 
         <div className="text-center mt-12">
           <p className="text-lg text-primary-foreground/90 drop-shadow max-w-2xl mx-auto">
-            We can't wait to celebrate this beautiful moment with our closest
-            family and friends
+            We can&apos;t wait to celebrate this beautiful moment with our
+            closest family and friends
           </p>
         </div>
       </div>
