@@ -130,7 +130,7 @@ const faqs: Array<{ question: string; answer: React.ReactNode }> = [
   {
     question: "Can I take photos during the ceremony?",
     answer:
-      "We kindly ask that you refrain from taking photos during the ceremony. Our professional photographer will capture all the special moments, and we&apos;ll be happy to share the photos with you afterward.",
+      "We kindly ask that you refrain from taking photos during the ceremony. Our professional photographer will capture all the special moments, and we'll be happy to share the photos with you afterward.",
   },
   {
     question: "What's the timeline for the day?",
