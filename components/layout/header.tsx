@@ -55,7 +55,11 @@ export default function Header() {
               </div>
             </Button>
           </PopoverTrigger>
-          <PopoverContent align="end" className="max-w-fit p-2">
+          <PopoverContent
+            align="center"
+            side="bottom"
+            className="max-w-fit p-2"
+          >
             <ul className="space-y-1 text-right tracking-tighter">
               {NAV_LINKS.map((item) => (
                 <li key={item.label}>
