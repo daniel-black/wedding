@@ -1,10 +1,18 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { CountDown } from "./count-down";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function DisplayText() {
   return (
-    <div className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none">
+    <motion.div
+      className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+    >
       <h1 className="tracking-tighter font-medium text-center text-primary-foreground text-4xl md:text-6xl lg:text-7xl px-4 select-none leading-tight text-balance drop-shadow-2xl max-w-3xl">
         <span>Come celebrate our love in the garden</span>
       </h1>
@@ -23,6 +31,6 @@ export default function DisplayText() {
           <Link href="/rsvp">RSVP Now</Link>
         </Button>
       </div>
-    </div>
+    </motion.div>
   );
 }
