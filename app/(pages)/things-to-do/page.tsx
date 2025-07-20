@@ -23,7 +23,7 @@ const activities = [
   {
     title: "Pearl Street in Boulder",
     description:
-      "Experience the vibrant energy of Boulder's famous pedestrian mall. Enjoy street performers, unique shops, and plenty of dining options.",
+      "Similar to Tennyson, Pearl Street is a great place to just walk around and check out the local shops and restaurants. It's close to the mountains too if you want to get out in nature.",
     categories: ["Shopping", "Entertainment", "Food"],
   },
   {
@@ -35,7 +35,7 @@ const activities = [
   {
     title: "Washington Park",
     description:
-      "Relax in one of Denver's most beautiful parks. Enjoy walking paths, gardens, and plenty of space to unwind and enjoy the outdoors.",
+      "A great place on the south side of Denver to just walk around and enjoy the outdoors. You might even run into Nikola Jokic who knows.",
     categories: ["Outdoor Activities"],
   },
   {
@@ -47,7 +47,7 @@ const activities = [
   {
     title: "Denver Botanic Gardens",
     description:
-      "We're getting married here! On the day of the wedding (May 29th, 2026) all of our guests will have full day access to the gardens for freeso we encourage you to go check it out.",
+      "We're getting married here! On the day of the wedding (May 29th, 2026) all of our guests will have full day access to the gardens for free so we encourage you to go check it out.",
     categories: ["Outdoor Activities"],
   },
   {
@@ -71,8 +71,8 @@ export default function ThingsToDoPage() {
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl font-bold mb-4 text-left">Things To Do</h1>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl text-left">
-            Discover local attractions and activities to enjoy during your visit
-            to Denver and Boulder.
+            Have fun while you&apos;re in town! Go check out some of our
+            favorite spots and see all the sights.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

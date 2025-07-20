@@ -86,6 +86,30 @@ export function MainDetailsSection() {
               </p>
             </div>
           </motion.div>
+
+          <motion.div
+            className="space-y-2"
+            initial={{ opacity: 0, x: -30 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 1.0 }}
+          >
+            <div className="h-[3px] w-14 bg-background" />
+            <h2 className="text-3xl sm:text-5xl font-display text-background">
+              RSVP
+            </h2>
+            <div>
+              <p className="text-background/80">
+                Please{" "}
+                <a
+                  href="/rsvp"
+                  className="text-background underline hover:text-background/80 transition-colors"
+                >
+                  RSVP
+                </a>{" "}
+                by March 29th, 2026
+              </p>
+            </div>
+          </motion.div>
         </div>
       </motion.div>
     </section>
