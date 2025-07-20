@@ -22,7 +22,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { CalendarIcon } from "lucide-react";
-import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
+import { Alert, AlertTitle } from "./ui/alert";
 
 // Guest type
 interface Guest {
