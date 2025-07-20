@@ -17,7 +17,10 @@ export default function Header() {
   return (
     <header className="w-full fixed top-0 left-0 z-50 pointer-events-none">
       <nav className="mx-auto max-w-3xl px-2 lg:px-0 py-2 flex justify-between items-center pointer-events-none">
-        <Button asChild className="rounded-full pointer-events-auto shadow-lg">
+        <Button
+          asChild
+          className="rounded-full pointer-events-auto shadow-lg ring-1 ring-ring/30"
+        >
           <Link
             href="/"
             className="px-4 flex items-center justify-center gap-1 tracking-tighter pointer-events-auto"
@@ -35,7 +38,7 @@ export default function Header() {
             <Button
               aria-label={isOpen ? "Close menu" : "Open menu"}
               size="icon"
-              className="rounded-full shadow-lg pointer-events-auto relative overflow-hidden"
+              className="rounded-full shadow-lg pointer-events-auto relative overflow-hidden ring-1 ring-ring/30"
             >
               <div className="relative w-4 h-4">
                 <MenuIcon

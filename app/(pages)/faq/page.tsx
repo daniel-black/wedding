@@ -31,24 +31,19 @@ const faqs: Array<{ question: string; answer: React.ReactNode }> = [
   {
     question: "What is the dress code for the wedding?",
     answer: (
-      <div>
-        <p>
-          Cocktail attire. Wear something colorful and bright for the garden.
-          Please leave the plain black clothes at home.
-        </p>
-        <p>
-          Check out this{" "}
-          <a
-            href="https://www.pinterest.com/castrillo1228/wedding/wedding-attire"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline underline-offset-2 text-primary hover:text-blue-600 transition-colors duration-75"
-          >
-            Pinterest board
-          </a>{" "}
-          for some inspiration.
-        </p>
-      </div>
+      <p>
+        Cocktail attire. Wear something colorful and bright for the garden.
+        Please leave the plain black clothes at home. Check out this{" "}
+        <a
+          href="https://www.pinterest.com/castrillo1228/wedding/wedding-attire"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline underline-offset-2 text-primary hover:text-blue-600 transition-colors duration-75"
+        >
+          Pinterest board
+        </a>{" "}
+        for some inspiration.
+      </p>
     ),
   },
   {
@@ -59,7 +54,7 @@ const faqs: Array<{ question: string; answer: React.ReactNode }> = [
   {
     question: "What time should I arrive?",
     answer:
-      "Please arrive 30 minutes before the ceremony start time. This will give you time to find parking, get settled, and find your seat.",
+      "Please arrive at the Denver Botanic Gardens around 4:30PM, 30 minutes before the ceremony start time. This will give you time to find parking, get settled, and find your seat.",
   },
   {
     question: "Is there parking available at the Denver Botanic Gardens?",
@@ -144,8 +139,24 @@ const faqs: Array<{ question: string; answer: React.ReactNode }> = [
   },
   {
     question: "What's the timeline for the day?",
-    answer:
-      "We recommend trickling into the garden at 4:30 PM. The ceremony will start at 5 PM and then will be followed by a cocktail hour in the garden. Then we will take the party to the Wright Room around 7:30 PM where we will have the dinner and reception until around 11 PM.",
+    answer: (
+      <div className="space-y-2">
+        <p>
+          We recommend trickling into the garden at 4:30 PM. The ceremony will
+          start at 5 PM and then will be followed by a cocktail hour in the
+          garden. Then we will take the party to the Wright Room around 6:30 PM
+          where we will have the dinner and reception until around 11 PM.
+        </p>
+        <p>
+          <Link
+            href="/schedule"
+            className="underline underline-offset-2 text-primary hover:text-blue-600 transition-colors duration-75"
+          >
+            See full schedule
+          </Link>
+        </p>
+      </div>
+    ),
   },
   {
     question: "Are there accommodations nearby?",
@@ -169,7 +180,14 @@ const faqs: Array<{ question: string; answer: React.ReactNode }> = [
         >
           Airbnbs
         </a>{" "}
-        in the area.
+        in the area. Check out the{" "}
+        <Link
+          href="/travel"
+          className="underline underline-offset-2 text-primary hover:text-blue-600 transition-colors duration-75"
+        >
+          Travel
+        </Link>{" "}
+        page for more information on lodging.
       </p>
     ),
   },
