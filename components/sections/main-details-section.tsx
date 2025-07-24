@@ -106,7 +106,7 @@ export function MainDetailsSection() {
                 >
                   RSVP
                 </a>{" "}
-                by March 29th, 2026
+                by March 1st, 2026
               </p>
             </div>
           </motion.div>

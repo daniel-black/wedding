@@ -176,7 +176,7 @@ export default function RSVPForm() {
         <CardContent className="space-y-4">
           <Alert>
             <CalendarIcon />
-            <AlertTitle>Please RSVP by March 29th, 2026.</AlertTitle>
+            <AlertTitle>Please RSVP by March 1st, 2026.</AlertTitle>
           </Alert>
           <Accordion type="single" value={`step${step}`} collapsible>
             {/* Step 1: Search */}
