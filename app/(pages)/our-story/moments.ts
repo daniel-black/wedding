@@ -186,6 +186,13 @@ export const moments: Array<Moment> = [
     date: "07/06/24",
     title: "Boston",
     text: "Another small trip just the two of us. Seafood can be questionable in Colorado so we made the most of our time near the coast.",
+    images: [
+      {
+        src: "/our-story/boston.png",
+        alt: "Us in Boston",
+        text: "Boston",
+      },
+    ],
   },
   {
     date: "09/29/24",
