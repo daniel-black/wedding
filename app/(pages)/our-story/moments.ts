@@ -273,7 +273,7 @@ export const moments: Array<Moment> = [
     text: "Dan proposed to Steph in a little park in Miami by the beach. We went to this park with Steph's mom and Alexis under the pretense of going to a nice dinner at a restaurant nearby. On the drive over, Steph was holding Dan's hand and noticed on his watch that his heart rate was going way up - she was a little suspicious at this moment but hadn't put it together yet. The restaurant was closed when we got there (oh no how weird) so we went for a little walk around the park while Esther and Alexis pretended to find an alternative restaurant. We had arranged for a photographer to be stealthily waiting for us to come by to capture the moment and when Dan spotted her Alexis suggested we take a picture by the water. While Steph was getting herself in position for the picture, Dan got down on one knee, ring in hand, and asked Steph to marry him. She said yes : )",
     images: [
       {
-        src: "/our-story/proposal.jpg",
+        src: "/our-story/proposal-pic.JPG",
         alt: "The proposal",
         text: "The proposal",
       },
