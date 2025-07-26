@@ -9,6 +9,24 @@ import Link from "next/link";
 
 const faqs: Array<{ question: string; answer: React.ReactNode }> = [
   {
+    question: "Is there a registry?",
+    answer: (
+      <p>
+        We don&apos;t require anything for our home, but if you&apos;d like to
+        contribute to our dream honeymoon, we&apos;d be incredibly grateful. You
+        can support us directly via{" "}
+        <a
+          href="https://venmo.com/u/danblack1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline underline-offset-2 text-primary hover:text-blue-600 transition-colors duration-75"
+        >
+          Venmo
+        </a>
+      </p>
+    ),
+  },
+  {
     question: "What should I expect for weather?",
     answer: (
       <p>

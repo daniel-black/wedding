@@ -137,6 +137,28 @@ export default function RSVPForm() {
           Your RSVP response has been recorded. We look forward to celebrating
           with you!
         </div>
+
+        {/* Honeymoon Fund Section */}
+        <motion.div
+          className="bg-muted/50 rounded-lg p-4 mb-6 max-w-md text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          <p className="text-sm text-muted-foreground mb-2">
+            💕 While we don&apos;t have a traditional registry, we&apos;d be
+            grateful for contributions to our dream honeymoon.
+          </p>
+          <a
+            href="https://venmo.com/u/danblack1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-sm underline underline-offset-2 text-primary hover:text-primary/80 transition-colors"
+          >
+            Support our honeymoon
+          </a>
+        </motion.div>
+
         <div className="flex flex-col sm:flex-row gap-4">
           <motion.div whileHover={{ scale: 1.02 }}>
             <Link

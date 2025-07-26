@@ -38,7 +38,7 @@ export function MainDetailsSection() {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
       >
-        <div className="container mx-auto max-w-3xl px-4 py-16 space-y-16">
+        <div className="container mx-auto max-w-3xl px-4 py-8 md:py-14 space-y-16">
           <motion.div
             className="space-y-2"
             initial={{ opacity: 0, x: -30 }}
