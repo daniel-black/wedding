@@ -50,17 +50,8 @@ const faqs: Array<{ question: string; answer: React.ReactNode }> = [
     question: "What is the dress code for the wedding?",
     answer: (
       <p>
-        Cocktail attire. Wear something colorful and bright for the garden.
-        Please leave the plain black clothes at home. Check out this{" "}
-        <a
-          href="https://www.pinterest.com/castrillo1228/wedding/wedding-attire"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline underline-offset-2 text-primary hover:text-blue-600 transition-colors duration-75"
-        >
-          Pinterest board
-        </a>{" "}
-        for some inspiration.
+        Let&apos;s make this fun. Our theme is upstage the bride and groom. You
+        can try your best ;)
       </p>
     ),
   },

@@ -85,6 +85,15 @@ export function MainDetailsSection() {
                 535 16th St Mall #240, Denver, CO 80202
               </p>
             </div>
+
+            <div className="pt-4">
+              <p className="text-background/80 italic text-sm sm:text-base">
+                *Due to the intimate size of our ceremony venue, some guests are
+                invited exclusively to join us for dinner and reception. Please
+                check your invitation for details on which events you&apos;ll be
+                celebrating with us.
+              </p>
+            </div>
           </motion.div>
 
           <motion.div
