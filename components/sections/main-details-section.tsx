@@ -90,7 +90,7 @@ export function MainDetailsSection() {
               <p className="text-background/80 italic text-sm sm:text-base">
                 *Due to the intimate size of our ceremony venue, some guests are
                 invited exclusively to join us for dinner and reception. Please
-                check your invitation for details on which events you&apos;ll be
+                check your e-vites for details on which events you&apos;ll be
                 celebrating with us.
               </p>
             </div>

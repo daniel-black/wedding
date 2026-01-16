@@ -193,6 +193,14 @@ export default function RSVPForm() {
           <CardDescription>
             We&apos;re so excited to have you join us for our special day!
             Please fill out the form below to let us know if you can make it.
+            <br />
+            <br />
+            <span className="italic text-xs">
+              *Due to the intimate size of our ceremony venue, some guests are
+              invited exclusively to join us for dinner and reception. Please
+              check your e-vites for details on which events you&apos;ll be
+              celebrating with us.
+            </span>
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
